@@ -3,35 +3,16 @@ import sys, shlex
 memory = []
 pointer = {}  # {name:line}
 commentsymbol = ";"
-filename = "code.txt"
+filename = sys.argv[1]
 
 # Define String, Integer and Float
 DFS = ""
 DFI = 0
 DFF = 0
 
-"""
-MEM 5                Creates 5 Memory slots
-DFS my text          Defines %s variable
-DFI 42               Defines %i variable
-DFF 3.141            Defines %f variable
-MOV M*[0]::<var>     Pushes <var> (2,hello,%s,...) to memory location 0
-                       -> M*[X]    Memory with position X
-                       -> C*        Output
-ADD 1::2             Add data from mem location 2 to mem location 1 and safe it in %s
-"""
-
 def error(txt):
     print("[6969]", txt)
     sys.exit()
-
-"""
-To-Do Errors
-- lexer, invalid quotation-marks
-- getvar, invalid number in memory
-- MOV, check if :: and C* or M*
-"""
-
 
 def lexer(y):
     return shlex.split(y)
