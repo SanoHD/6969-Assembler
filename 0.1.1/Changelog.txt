@@ -1,0 +1,9 @@
+6969 Assembler
+Version 0.1.1
+====================================
+ - Bug fixes of course
+ - Added comment at end of line
+ - Added %? variable for user input
+ - Added file operation-instructions (FLR and FLW)
+ - Added error codes to make it more complicate
+ - Added ADD instruction
