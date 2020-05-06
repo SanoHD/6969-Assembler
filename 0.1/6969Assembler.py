@@ -1,5 +1,4 @@
 import sys, shlex
-from typing import TextIO
 
 memory = []
 pointer = {}  # {name:line}
