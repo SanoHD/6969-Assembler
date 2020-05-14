@@ -32,20 +32,6 @@ errors = {
 
 }
 
-"""
-MEM 5                Creates 5 Memory slots
-DFS my text          Defines %s variable
-DFI 42               Defines %i variable
-DFF 3.141            Defines %f variable
-MOV M*[0]::<var>     Pushes <var> (2,hello,%s,...) to memory slot 0
-                       -> M*[X]    Memory with position X
-                       -> C*        Output
-ADD 1::2             Add data from mem slot 2 to mem slot 1 and safe it in %s
-SPT mypoint          Set point at current line number
-JPT mypoint          Jump to line number of mypoint -> If ? in pointname -> comparison
-"""
-
-
 def error(errorcode):
     try:
         print("[6969]", errorcode, errors[errorcode])
@@ -53,15 +39,6 @@ def error(errorcode):
     except KeyError:
         print("[6969] Oh dear! An error-error occurred!")
         sys.exit()
-
-
-"""
-To-Do Errors
-- lexer, invalid quotation-marks
-- getvar, invalid number in memory
-- Check if :: / C* or M* / ...
-"""
-
 
 def lexer(y):
     return shlex.split(y)
