@@ -4,4 +4,3 @@ Version 0.1.3
  - Bug fixes of course
  - Added CMP instruction
  - Added some errors
- 
