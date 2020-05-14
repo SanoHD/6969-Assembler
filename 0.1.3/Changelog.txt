@@ -1,0 +1,8 @@
+6969 Assembler
+Version 0.1.2
+====================================
+ - Bug fixes of course
+ - Added simple math operations (MAD, MSB, MML, MDV)
+ - Added JMP instruction
+ - Added PNT instruction
+ - Added CST, CIN and CFL instruction
